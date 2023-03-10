@@ -5,6 +5,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatCardModule} from '@angular/material/card';
 
 import { AppComponent } from './app.component';
 import { BasicFormComponent } from './basic-form/basic-form.component';
@@ -21,8 +22,8 @@ import { BasicFormComponent } from './basic-form/basic-form.component';
     FormsModule,
     ReactiveFormsModule,
     MatInputModule,
-    MatFormFieldModule
-   
+    MatFormFieldModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
