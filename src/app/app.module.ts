@@ -6,14 +6,21 @@ import { MatInputModule } from '@angular/material/input';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatCardModule} from '@angular/material/card';
-
 import { AppComponent } from './app.component';
 import { BasicFormComponent } from './basic-form/basic-form.component';
+import { MatButtonModule } from '@angular/material/button';
+import { RouterModule } from '@angular/router';
+import { ValidationFormComponent } from './validation-form/validation-form.component';
 
+const routes = [
+  {path: 'basicForm', component: BasicFormComponent},
+  {path: 'validationForm', component: ValidationFormComponent}
+]
 @NgModule({
   declarations: [
     AppComponent,
-    BasicFormComponent
+    BasicFormComponent,
+    ValidationFormComponent
   ],
   imports: [
     BrowserModule,
@@ -23,7 +30,9 @@ import { BasicFormComponent } from './basic-form/basic-form.component';
     ReactiveFormsModule,
     MatInputModule,
     MatFormFieldModule,
-    MatCardModule
+    MatCardModule,
+    MatButtonModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]

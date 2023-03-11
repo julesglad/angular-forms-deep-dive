@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
-  selector: 'app-basic-form',
-  templateUrl: './basic-form.component.html',
-  styleUrls: ['./basic-form.component.css'],
+  selector: 'app-validation-form',
+  templateUrl: './validation-form.component.html',
+  styleUrls: ['./validation-form.component.css']
 })
-export class BasicFormComponent implements OnInit {
+export class ValidationFormComponent implements OnInit {
   catForm: FormGroup;
 
   constructor(private fb: FormBuilder) {}

@@ -1,1 +1,18 @@
-<app-basic-form></app-basic-form>
+<!-- <app-basic-form></app-basic-form> -->
+
+<div class="container">
+  <div class="row pt-2 px-5">
+    <h1 class="text-center">Choose a form to view...</h1>
+    <button mat-raised-button color="primary" routerLink="basicForm">
+      Basic Form
+    </button>
+    <button mat-raised-button color="primary" routerLink="validationForm">Form with Validation</button>
+    <button mat-raised-button color="primary">Form Array</button>
+    <button mat-raised-button color="primary">Nested Form Array</button>
+    <button mat-raised-button color="primary">Different Input Types</button>
+  </div>
+  <hr />
+  <div class="row">
+    <router-outlet></router-outlet>
+  </div>
+</div>

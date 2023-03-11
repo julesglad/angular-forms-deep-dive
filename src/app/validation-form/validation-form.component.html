@@ -1,0 +1,31 @@
+<div class="container">
+  <mat-card class="row mt-4 mat-elevation-z8">
+  <form [formGroup]="catForm" class="col" (ngSubmit)="submitForm()">
+    <h1 class="pb-3">Form With Validation</h1>
+    <div class="row">
+    <mat-form-field appearance="outline" class="col">
+      <mat-label>Cat's Name</mat-label>
+      <input matInput formControlName="catName">
+    </mat-form-field>
+    <mat-form-field appearance="outline" class="col">
+      <mat-label>Fur Color</mat-label>
+      <input matInput formControlName="furColor">
+    </mat-form-field>
+    <mat-form-field appearance="outline" class="col">
+      <mat-label>Weight</mat-label>
+      <input matInput type="number" formControlName="weight">
+    </mat-form-field>
+    <mat-form-field appearance="outline" class="col">
+      <mat-label>Cuteness Level</mat-label>
+      <input matInput formControlName="cutenesLevel">
+    </mat-form-field>
+    <button mat-raised-button color="primary" type="submit">Submit</button>
+  
+  </div>
+  </form>
+  </mat-card>
+  <pre class="p-4">{{catForm.value | json}}</pre>
+  </div>
+  
+  
+  
